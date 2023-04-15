@@ -882,6 +882,7 @@ main{
     }
     .header-image{
         width: 175%;
+        overflow-x: hidden;
     }
     header nav{
         height: 65px;
