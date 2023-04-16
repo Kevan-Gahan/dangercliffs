@@ -34,7 +34,6 @@ header{
 
 .nav-scrolled{
     z-index: 3;
-    
     background-color: rgba(0,0,0,1);
     outline: 0.5px solid white;
 
@@ -815,13 +814,14 @@ main{
 
 @media(max-width:820px){
 
+    .nav-regular{
+        height:8vh;
+    }
 
     /* -- NAVBAR CHANGE WITH SCROLL -- */
     .nav-scrolled .nav-item a{
         color:black;
     }
-
-
 
     /* -------- HAMBURGER MENU ------- */
     .hamburger{
@@ -949,6 +949,7 @@ main{
     }
     .bottom-links a{
         margin: 10px 15px;
+        font-size: small;
     }
 
 
