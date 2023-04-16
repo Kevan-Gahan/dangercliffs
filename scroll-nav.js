@@ -1,8 +1,8 @@
 const nav = document.querySelector(".nav-regular");
-const SectionOne = document.querySelector(".header-image");
+const SectionOne = document.querySelector(".page-title");
 
 const SectionOneOptions = {
-    rootMargin: "-250px 0px 0px 0px"
+    rootMargin: "0px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(
