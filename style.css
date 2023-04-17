@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden;
+}
+
 body{
     margin: 0px;
     background-color: #C8C4C3;
@@ -64,15 +68,16 @@ header{
     padding: 1.5vw;
     display: inline-block;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .nav-item-separator{
     display: none;
+    position: absolute;
     width: 100%;
+    left: 0;
     height: 1px;
-    margin-top: 5px;
-    background-color: #C8C4C3;
+    background-color: #c8c4c3a3;
 
 }
 
@@ -87,8 +92,8 @@ header{
 
 .nav-regular button{
     padding: 7px 20px;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 400;
     background-color: rgb(0, 0, 0,1);
     color: white;
     border: 1px solid red;
@@ -877,27 +882,37 @@ main{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: white;
+        background-color:white;
         outline: 2px solid red;
-        width: 100%;
+        width: 80%;
         text-align: center;
         transition: 0.3s;
         box-shadow: 1px 12px 42px 10px rgba(0,0,0,0.75);
         -webkit-box-shadow: 1px 12px 42px 10px rgba(0,0,0,0.75);
         -moz-box-shadow: 1px 12px 42px 10px rgba(0,0,0,0.75);
     }
+
     .nav-item-separator{
         display: block;
     }
+
     .nav-item{
-        margin: 10px 0;
+        margin: 15px 0;
         font-size: 25px;
     }
-    header nav button{
-        font-size: 30px;
+
+    .nav-regular button{
+        font-size: 27px;
     }
+
+    .nav-scrolled button{
+        background-color: black;
+        color: white;
+        outline: 2px solid red;
+    }
+
     .nav-menu.active{
-        left: 0%;
+        left: 10%;
     }
 
 
