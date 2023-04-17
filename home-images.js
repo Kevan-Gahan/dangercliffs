@@ -11,6 +11,7 @@ const radio8 = document.getElementById("radio8");
 const radio9 = document.getElementById("radio9");
 const radio10 = document.getElementById("radio10");
 const radio11 = document.getElementById("radio11");
+const radio12 = document.getElementById("radio12");
 
 
 setInterval(function(){
@@ -49,9 +50,12 @@ setInterval(function(){
     radio11.addEventListener("click", () => {
         counter = 11;
     })
+    radio12.addEventListener("click", () => {
+        counter = 12;
+    })
 
     counter++;
-    if(counter > 11){
+    if(counter > 12){
         counter = 1;
     }
 },5000);
