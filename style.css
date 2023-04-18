@@ -9,13 +9,6 @@ body{
     overflow-x: hidden;
 }
 
-/*
-* {
-    outline: 1px solid red;
-}
-*/
-
-
 /* ------------------------------- HEADER SECTION --------------------------- */
 header{
     position: relative;
@@ -40,8 +33,6 @@ header{
 .nav-scrolled{
     z-index: 3;
     background-color: rgba(0,0,0,0.9);
-    /*outline: 0.5px solid white;*/
-
     box-shadow: 0px 6px 6px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 6px 6px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 6px 6px -1px rgba(0,0,0,0.75);
@@ -196,7 +187,14 @@ header{
     box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
     -webkit-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
     -moz-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
-    
+}
+
+
+.page-top{
+    height:0;
+    width:100vw;
+    margin-top: 0;
+    position: absolute;
 }
 
 .banner{
@@ -344,16 +342,14 @@ header{
     height:var(--image-slider-height);
     margin-top: 10vh;
     margin-bottom: 10vh;
-    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+    
 }
 
 
 .image-slider-top{
+    border-radius: 10px;
     width: 100%;
     height: fit-content;
-    border-radius: 10px;
     overflow: hidden;
     overflow-y: hidden;
     margin: auto;
@@ -441,6 +437,9 @@ header{
 #radio11:checked ~ .first{
     margin-left: calc(var(--image-slider-move) * 10);
 }
+#radio12:checked ~ .first{
+    margin-left: calc(var(--image-slider-move) * 11);
+}
 
 /* ---------- AUTOMATIC NAVIGATION SECTION ----- */
 .navigation-auto{
@@ -493,6 +492,9 @@ header{
     background: red;
 }
 #radio11:checked ~ .navigation-auto .auto-btn11{
+    background: red;
+}
+#radio12:checked ~ .navigation-auto .auto-btn12{
     background: red;
 }
 
@@ -587,6 +589,14 @@ footer > *{
 
 /* ---------------------------- ABOUT PAGE ---------------------------------- */
 
+.header-image-about{
+    width:100vw;
+    position: relative;
+    box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
+}
+
 .about-content{
     font-family: 'Inter', sans-serif;
     text-align: center;
@@ -608,7 +618,6 @@ footer > *{
 }
 
 .how-it-started{
-    outline: 1px solid red;
     display: flex;
     flex-direction: column;
     text-align: center; 
@@ -669,6 +678,7 @@ footer > *{
 
 /* ---------------------------- CONTACT PAGE -------------------------------- */
 .contact-content{
+    margin-top: 30vh;
     font-family: 'Inter', sans-serif;
     align-items: center;
     position: relative;
@@ -758,6 +768,14 @@ footer > *{
     flex-direction: column;
 }
 
+.header-image-share{
+    width:100vw;
+    position: relative;
+    box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
+}
+
 .under-construction{
     margin-bottom: 3vh;
 }
@@ -803,7 +821,8 @@ footer > *{
 
 
 /* ---------------------------- THANK YOU PAGE ------------------------------ */
-main{
+.thank-you-content{
+    margin-top: 75px;
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
@@ -857,7 +876,9 @@ main{
 }
 
 .separator-shop{
+    margin: auto;
     margin-bottom: 75px;
+
 
 }
 
@@ -949,10 +970,15 @@ main{
     }
     .header-image{
         height: 100vh;
-        width:auto;
-        overflow-x: hidden;
-        left: -50%;
+        margin-left: -37vw;
     }
+
+    .header-image-about{
+        
+        right:0;
+        height:50vh;
+    }
+
     header nav{
         height: 65px;
         background-color: rgba(0,0,0,0);
@@ -961,7 +987,7 @@ main{
         font-size: 10vw;
     }
     .header-text{
-        margin-top:10vh;
+        margin-top:7vh;
         margin-bottom: 0px;
         z-index: 1;
     }
