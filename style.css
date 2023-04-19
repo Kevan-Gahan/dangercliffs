@@ -139,7 +139,7 @@ header{
 }
 
 .header-text-subpage{
-    top: 15vmin;
+    top: 17vmin;
     text-align: center;
     margin: auto;
     width: 100%;
@@ -622,9 +622,6 @@ footer > *{
     margin-bottom: 2px;
 }
 
-.header-text-subpage{
-    top: 3vmin;
-}
 
 .header-underline{
     margin: auto;
@@ -977,6 +974,9 @@ footer > *{
     .header-image{
         height: 100vh;
         margin-left: -45vw;
+    }
+    .header-text-subpage{
+        top: 3vmin;
     }
 
 
