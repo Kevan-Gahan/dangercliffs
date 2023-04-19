@@ -138,6 +138,16 @@ header{
     animation: 2s ease-out 0s 1 ZoomIn;
 }
 
+.header-text-subpage{
+    top: 15vmin;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+}
+
 .header-text > *{
     padding: 5px;
 }
@@ -589,8 +599,8 @@ footer > *{
 
 /* ---------------------------- ABOUT PAGE ---------------------------------- */
 
-.header-image-about{
-    width:100vw;
+.header-image-subpage{
+    width:100%;
     position: relative;
     box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
     -webkit-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
@@ -610,6 +620,10 @@ footer > *{
 
 .about-header{
     margin-bottom: 2px;
+}
+
+.header-text-subpage{
+    top: 3vmin;
 }
 
 .header-underline{
@@ -678,7 +692,7 @@ footer > *{
 
 /* ---------------------------- CONTACT PAGE -------------------------------- */
 .contact-content{
-    margin-top: 30vh;
+    margin-top: 2vh;
     font-family: 'Inter', sans-serif;
     align-items: center;
     position: relative;
@@ -766,14 +780,6 @@ footer > *{
     margin-right: 5vw;
     display: flex;
     flex-direction: column;
-}
-
-.header-image-share{
-    width:100vw;
-    position: relative;
-    box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
 }
 
 .under-construction{
@@ -970,14 +976,9 @@ footer > *{
     }
     .header-image{
         height: 100vh;
-        margin-left: -37vw;
+        margin-left: -45vw;
     }
 
-    .header-image-about{
-        
-        right:0;
-        height:50vh;
-    }
 
     header nav{
         height: 65px;
