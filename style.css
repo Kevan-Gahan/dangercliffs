@@ -32,7 +32,8 @@ header{
 
 .nav-scrolled{
     z-index: 3;
-    background-color: rgba(0,0,0,0.9);
+    height:8vmin;
+    background-color: rgba(0,0,0,0.95);
     box-shadow: 0px 6px 6px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 6px 6px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 6px 6px -1px rgba(0,0,0,0.75);
@@ -188,7 +189,7 @@ header{
 }
 
 .header-logo img{
-    height:350px;
+    height:50vmin;
 }
 
 .header-image{
@@ -891,9 +892,7 @@ footer > *{
 
 @media(max-width:820px){
 
-    .header-logo{
-        display: block;
-    }
+
 
     .nav-regular{
         height:65px;
@@ -957,7 +956,7 @@ footer > *{
     }
 
     .nav-menu.active{
-        top:10%;
+        top:10vmin;
     }
 
 
@@ -974,12 +973,11 @@ footer > *{
     }
     .header-image{
         height: 100vh;
-        margin-left: -45vw;
+        margin-left: -55vw;
     }
     .header-text-subpage{
-        top: 3vmin;
+        top: 10vmin;
     }
-
 
     header nav{
         height: 65px;
@@ -1012,7 +1010,17 @@ footer > *{
         margin-right: 5px;
     }
 
+    .bottom-links > *{
+        margin-bottom: 1vh;
+    }
 
+    .follow-us, .contact-us, .shop-us > *{
+        margin:0;
+    }
+
+    .follow-us svg, .contact-us svg, .shop-us svg{
+        margin-right:2vw;
+    }
 
     /* --- HOME PAGE IMAGE SLIDER --- -*/
     :root{
@@ -1069,6 +1077,11 @@ footer > *{
     /* ------ ABOUT PAGE ------ -*/
     .about-paragraph{
         width:85%;
+    }
+
+    .header-image-subpage{
+        width:125%;
+        left:-25%;
     }
 
 
