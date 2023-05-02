@@ -121,15 +121,6 @@ header{
 }
 
 
-@keyframes ZoomIn {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
 .header-text{
     top: 15vmin;
     text-align: center;
@@ -137,7 +128,6 @@ header{
     width: 100%;
     position: absolute;
     z-index: 1;
-    animation: 2s ease-out 0s 1 ZoomIn;
 }
 
 .header-text-subpage{
@@ -186,7 +176,6 @@ header{
     justify-content: center;
     align-items: center;
     margin: 50vh auto;
-    animation: 2s ease-out 0s 1 ZoomIn;
 }
 
 .header-logo img{
@@ -210,26 +199,51 @@ header{
 
 .banner{
     align-items: center;
+    justify-content: center;
     font-family: 'Inter', sans-serif;
-    display: flex;
-    justify-content: space-between;
     margin: 7vh 0 5vh 0;
     height: 10vh;	
     background: rgb(137, 140, 141);
     color: White;
     outline: 3px solid red;
+    overflow: scroll;
 }
 
-.wide-banner {
+.banner-wrapper{
+    display: flex;
+    margin: auto;
+    height:100%;
+    width:100%;
+    align-items: center;
+    justify-content: left;
+    overflow: scroll; 
+}
+
+.banner-texts{
+    height:fit-content;
+    display: flex;
+    
+}
+
+.banner-text{
     font-size: 2.2vw;
-    width: 100%;
+    width:100vw;
+    white-space: nowrap;
     text-align: center;
-    transition: all 0.2s ease-in;
+    animation: home_marquee 10s infinite;
+    transition: ease;
 }
 
-.narrow-banner{
-    display: none;
+
+@keyframes home_marquee{
+    50%{
+        transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(-200vw);
+    }
 }
+
 
 /* ----- HAMBURGER MENU WHEN NARROW SCREEN ----- */
 
@@ -989,15 +1003,6 @@ footer > *{
 
 
     /* --------- HOME PAGE ---------- -*/
-    .wide-banner{
-        display: none;
-    }
-    .narrow-banner{
-        display: inline;
-        font-size: 2.5vh;
-        width: 100%;
-        text-align: center;
-    }
     .header-image{
         height: 100vh;
         margin: 0 0 0 -55vw;
@@ -1020,6 +1025,9 @@ footer > *{
     }
     .logo-image{
         height:100%;
+    }
+    .banner-text{
+        font-size: 4.5vw;
     }
     .what-we-do{
         height: fit-content;
