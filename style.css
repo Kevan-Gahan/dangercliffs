@@ -668,11 +668,12 @@ footer > *{
 .about-img-2{
     border: 3px solid black;
     width:75%;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 }
 .about-img-2 img{
     width: 100%;
-    margin:0;
     transition: 1s;
 }
 
@@ -683,7 +684,8 @@ footer > *{
 .about-img-3{
     border: 3px solid black;
     width:100%;
-    height: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-img-3 img{
@@ -698,6 +700,9 @@ footer > *{
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .about-bottom-section img{
@@ -706,10 +711,11 @@ footer > *{
 }
 .about-bottom-section h1{
     text-align: center;
-    margin: 4vmin auto;
+    margin: 0% auto;
     width: 100%;
     position: absolute;
     z-index: 9999;
+    color: white;
 }
 
 /* ---------------------------- CONTACT PAGE -------------------------------- */
@@ -731,7 +737,7 @@ footer > *{
 
 .logo-image-contactpage{
     height:37vh;
-    margin: 0 0 7vh 0;
+    margin: 3vh 0;
 }
 
 .form-container{
@@ -744,18 +750,18 @@ footer > *{
 
 .contact-form{
     background-color: rgba(62, 93, 170, 0.2);
-    /*background-color: black;*/
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
     width: 85vw;
     max-width: 800px;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .contact-form > *{
-    margin: 10px 0 0 0;
-    padding: 20px;
+    margin: 2vh 0 0 0;
+    padding: 2vh;
 }
 
 .form-input{
@@ -781,7 +787,7 @@ footer > *{
 
 .attach-images-input{
     padding: 0;
-    margin: 0 0 10px 20px;
+    margin: 0 0 1vh 2vh;
 }
 
 
@@ -807,14 +813,16 @@ footer > *{
 
 .share-purpose{
     font-size: larger;
-    margin: 0 auto 8vh;
-    width: 800px;
+    margin: 3vh auto 8vh;
+    width: 50vw;
     outline: 2px solid red;
-    border-radius: 20px;
+    box-shadow: 1px 5px 10px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 5px 10px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 5px 10px 5px rgba(0,0,0,0.75);
 }
 
 .share-purpose p{
-    padding: 10px;
+    padding: 1vw;
 }
 
 .contact-link-share{
@@ -841,7 +849,7 @@ footer > *{
 
 /* ---------------------------- THANK YOU PAGE ------------------------------ */
 .thank-you-content{
-    margin: 75px 0 0 0;
+    margin: 10vh 0 0 0;
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
@@ -850,11 +858,11 @@ footer > *{
 }
 
 .message-top{
-    margin:5vh 0 0 0;
+    margin:5vh 0;
 }
 
 .message-bottom{
-    margin: 0 0 3vh 0;
+    margin: 5vh 0;
 }
 
 .logo-image-thankyoupage{
@@ -900,19 +908,15 @@ footer > *{
 
     /* -- NAVBAR CHANGE WITH SCROLL -- */
     .nav-regular{
-        height:12vmin;
+        height:15vmin;
     }
 
     .nav-scrolled{
-        height:12vmin;
+        height:15vmin;
     }
 
     .nav-scrolled .nav-item a{
         color:black;
-    }
-
-    .nav-scrolled button{
-        outline: none;
     }
 
     /* -------- HAMBURGER MENU ------- */
@@ -963,7 +967,7 @@ footer > *{
     .nav-scrolled button{
         background-color: black;
         color: white;
-        outline: 2px solid red;
+        border: 1px solid red;
     }
 
     .nav-menu.active{
@@ -1045,7 +1049,7 @@ footer > *{
     .bottom-links{
         flex-direction: column;
         height: fit-content;
-        margin: 10vh 0 0 0;
+        margin: 0 0 0 0;
         padding-top: 2vh;
         padding-bottom: 2vh;
     }
@@ -1141,6 +1145,10 @@ footer > *{
         font-size: smaller;
     }
 
+    .about-bottom-section{
+        border:1px solid black;
+    }
+
     .about-bottom-section img{
         width: 150%;
     }
@@ -1152,13 +1160,19 @@ footer > *{
 
 
     /* ----- CONTACT PAGE ----- -*/
-    .logo-image-contactpage{
-        display: none;
+    .contact-conten{
+        margin: 2vh 0;
+    }
+
+    .contact-form{
+        width: 98vw;
     }
 
     .contact-toptext{
         width: 90vw;
     }
+
+
 
 
     /* ----- SHARE PAGE ----- -*/
@@ -1168,6 +1182,7 @@ footer > *{
     }
     .share-content{
         margin: 0 0 0 0;
+        align-items: center;
     }
 
 
