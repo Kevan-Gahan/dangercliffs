@@ -206,7 +206,7 @@ header{
     background: rgb(137, 140, 141);
     color: White;
     outline: 3px solid red;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .banner-wrapper{
@@ -215,8 +215,7 @@ header{
     height:100%;
     width:100%;
     align-items: center;
-    justify-content: left;
-    overflow: scroll; 
+    overflow: hidden; 
 }
 
 .banner-texts{
@@ -231,9 +230,11 @@ header{
     white-space: nowrap;
     text-align: center;
     animation: home_marquee 10s infinite;
+    -webkit-animation: webkit-home_marquee 10s infinite;
+    -moz-animation: moz-home_marquee 10s infinite;
+    -o-animation: o-home_marquee 10s infinite;
     transition: ease;
 }
-
 
 @keyframes home_marquee{
     50%{
