@@ -82,6 +82,7 @@ header{
     left: 0;
     height: 1px;
     background-color: #c8c4c3a3;
+    margin: 0;
 }
 
 .nav-item a{
@@ -714,8 +715,10 @@ footer > *{
     margin: 0% auto;
     width: 100%;
     position: absolute;
-    z-index: 9999;
+    z-index: 2;
     color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 
+    #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 /* ---------------------------- CONTACT PAGE -------------------------------- */
@@ -956,22 +959,31 @@ footer > *{
     }
 
     .nav-item{
-        margin: 2vh 0;
+        margin: 0;
         font-size: 1.5em;
+    }
+    
+    .nav-item a{
+        display: block;
+        width:100vw;
+        padding: 2vh 0;
     }
 
     .nav-regular button{
-        font-size: 1em;
+        font-size: 1.2em;
+        background-color: transparent;
+        color: black;
+        font-weight: 600;
     }
 
     .nav-scrolled button{
-        background-color: black;
-        color: white;
+        background-color: transparent;
+        color: black;
         border: 1px solid red;
     }
 
     .nav-menu.active{
-        top:12vmin;
+        top:15vmin;
     }
 
 
@@ -993,7 +1005,9 @@ footer > *{
     .header-text-subpage{
         top: 10vmin;
     }
-
+    .header-logo img{
+        height:65vmin;
+    }
     .page-title{
         font-size: 10vw;
     }
@@ -1178,7 +1192,6 @@ footer > *{
     /* ----- SHARE PAGE ----- -*/
     .share-purpose{
         width:85vw;
-        margin: 0 0 1vh 0;
     }
     .share-content{
         margin: 0 0 0 0;
