@@ -184,9 +184,7 @@ header{
 
 .header-image{
     height: 100vh;
-    box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
+    
 }
 
 
@@ -201,7 +199,7 @@ header{
     align-items: center;
     justify-content: center;
     font-family: 'Inter', sans-serif;
-    margin: 7vh 0 5vh 0;
+    margin: 0 0 5vh 0;
     height: 10vh;	
     background: rgb(137, 140, 141);
     color: White;
@@ -244,31 +242,6 @@ header{
         transform: translateX(-200vw);
     }
 }
-@-webkit-keyframes webkit-home_marquee{
-    50%{
-        -webkit-transform: translateX(-100vw);
-    }
-    100%{
-        -webkit-transform: translateX(-200vw);
-    }
-}
-@-moz-keyframes moz-home_marquee{
-    50%{
-        -moz-transform: translateX(-100vw);
-    }
-    100%{
-        -moz-transform: translateX(-200vw);
-    }
-}
-@-o-keyframes webkit-home_marquee{
-    50%{
-        -o-transform: translateX(-100vw);
-    }
-    100%{
-        -o-transform: translateX(-200vw);
-    }
-}
-
 
 
 /* ----- HAMBURGER MENU WHEN NARROW SCREEN ----- */
@@ -282,8 +255,8 @@ header{
 .bar{
     display: block;
     width: 25px;
-    height: 3px;
-    margin: 5px auto;
+    height: 1px;
+    margin: 7px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: red;  
