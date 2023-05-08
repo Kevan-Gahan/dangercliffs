@@ -17,12 +17,18 @@ header{
     align-items: center;
 }
 
+.home-header-cover{
+    overflow: hidden;
+    height:100vh;
+    width:100%;
+}
+
 .nav-regular{
     justify-content: space-between;
     position: absolute;
     z-index: 3;
     width: 100%;
-    height: 10vmin;
+    height: 5em;
     display: flex;
     align-items: center; 
     transition: all 500ms ease-in-out;
@@ -33,11 +39,9 @@ header{
 
 .nav-scrolled{
     z-index: 3;
-    height:8vmin;
-    background-color: rgba(0,0,0,0.95);
-    box-shadow: 0px 6px 6px -1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 6px 6px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 6px 6px -1px rgba(0,0,0,0.75);
+    height:5em;
+    background-color: rgba(0,0,0,0.7);
+    
 }
 
 .nav-scrolled .nav-item a{
@@ -57,6 +61,15 @@ header{
       transform: translateX(0);
     }
   }
+
+@keyframes zoomout {
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 
 .nav-menu{
     display:flex;
@@ -87,7 +100,7 @@ header{
 
 .nav-item a{
     transition: all 0.3s ease 0s;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 .nav-item a:hover{
@@ -122,10 +135,10 @@ header{
 
 
 .header-text{
-    top: 15vmin;
-    text-align: center;
+    top: 25em;
+    text-align: left;
     margin: auto;
-    width: 100%;
+    width: fit-content;
     position: absolute;
     z-index: 1;
 }
@@ -145,11 +158,10 @@ header{
 
 .header-text svg{
     display: block;
-    margin: auto;
 }
 
 .page-title{
-    font-size: 5vw;
+    font-size: 7em;
     font-weight: 800;
     color: white;
     text-shadow: 1px 0 0 #000, 0 -1px 0 
@@ -180,11 +192,15 @@ header{
 
 .header-logo img{
     height:45vmin;
+    display: none;
 }
 
 .header-image{
-    height: 100vh;
-    
+    object-fit: cover;
+    object-position: center;
+    animation: 2s ease-out 0s 1 zoomout;
+    max-width:100%;
+    min-height: 100%;
 }
 
 
@@ -202,8 +218,10 @@ header{
     margin: 0 0 5vh 0;
     height: 10vh;	
     background: rgb(137, 140, 141);
+    background: #000;
     color: White;
-    outline: 3px solid red;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
     overflow: hidden;
 }
 
@@ -280,7 +298,7 @@ header{
 .bar{
     display: block;
     width: 25px;
-    height: 1px;
+    height: 1.5px;
     margin: 7px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -629,12 +647,18 @@ footer > *{
 
 /* ---------------------------- ABOUT PAGE ---------------------------------- */
 
-.header-image-subpage{
+.subpage-header-cover{
+    overflow: hidden;
+    height:65vh;
     width:100%;
-    position: relative;
-    box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 1px 12px 14px 0px rgba(0,0,0,0.6);
+}
+
+.header-image-subpage{
+    object-fit: cover;
+    object-position: center;
+    animation: 2s ease-out 0s 1 zoomout;
+    max-width:100%;
+    min-height: 100%;
 }
 
 .about-content{
@@ -949,11 +973,11 @@ footer > *{
 
     /* -- NAVBAR CHANGE WITH SCROLL -- */
     .nav-regular{
-        height:15vmin;
+        height:4.5em;
     }
 
     .nav-scrolled{
-        height:15vmin;
+        height:4.5em;
     }
 
     .nav-scrolled .nav-item a{
@@ -969,23 +993,23 @@ footer > *{
         opacity: 0;    
     }
     .hamburger.active .bar:nth-child(1){ 
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(8.5px) rotate(45deg);
     }
     .hamburger.active .bar:nth-child(3){ 
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8.5px) rotate(-45deg);
     }
     .nav-menu{
         display: flex;
         position:inherit;
         z-index: 3;
-        left: 0;
-        top: -150%;
+        left: -150%;
+        top:4.5em;
         gap: 0;
         flex-direction: column;
         background-color:white;
         width: 100%;
         height:100%;
-        text-align: center;
+        text-align: left;
         transition: 0.3s;
         box-shadow: 1px 12px 42px 10px rgba(0,0,0,0.75);
         -webkit-box-shadow: 1px 12px 42px 10px rgba(0,0,0,0.75);
@@ -997,7 +1021,7 @@ footer > *{
     }
 
     .nav-item{
-        margin: 0;
+        margin: 0 0 0 35vw;
         font-size: 1.5em;
     }
     
@@ -1005,6 +1029,7 @@ footer > *{
         display: block;
         width:100vw;
         padding: 2vh 0;
+        color: black;
     }
 
     .nav-regular button{
@@ -1020,8 +1045,16 @@ footer > *{
         border: 1px solid red;
     }
 
+    .nav-regular.menu-on{
+        background-color: black;
+    }
+
+    .nav-scrolled.menu-on{
+        background-color: black;
+    }
+
     .nav-menu.active{
-        top:15vmin;
+        left:0;
     }
 
 
@@ -1029,10 +1062,12 @@ footer > *{
     /* --------- HOME PAGE ---------- -*/
     .header-image{
         height: 100vh;
-        margin: 0 0 0 -55vw;
+    }
+    .header-text{
+        margin:auto;
     }
     .header-text-subpage{
-        top: 10vmin;
+        top: 20vmin;
     }
     .header-logo img{
         height:65vmin;
@@ -1052,6 +1087,10 @@ footer > *{
     }
     .banner-text{
         font-size: 4.5vw;
+    }
+    .separator{
+        width:75%;
+        margin:2em auto;
     }
     .what-we-do{
         height: fit-content;
@@ -1138,9 +1177,13 @@ footer > *{
         width:85%;
     }
 
+    .subpage-header-cover{
+        height: 50vh;
+    }
+
     .header-image-subpage{
-        width:125%;
-        left:-25%;
+        object-position: right;
+        right:0;
     }
 
     .about-section{
