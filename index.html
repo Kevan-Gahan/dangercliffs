@@ -19,7 +19,47 @@
 <body>
 
     <header>
-        <div class="home-header-cover">
+        <nav class="nav-regular">
+            <a class="logo-image" href="index" >
+                <img class="logo-image" src="./img/Danger Cliffs - SKIIER - FINAL.png" height="100%" alt="Danger CLiffs Logo"/>
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index">HOME</a></li>
+                <li><span class="nav-item-separator"></span></li>
+                <li class="nav-item"><a href="about">ABOUT</a></li>
+                <li><span class="nav-item-separator"></span></li>
+                <li class="nav-item"><a href="share">SHARE</a></li>
+                <li><span class="nav-item-separator"></span></li>
+                <li class="nav-item"><a href="contact">CONTACT</a></li>
+                <li><span class="nav-item-separator"></span></li>
+                <li class="nav-item"><a href="shop"><button>SHOP</button></a>
+                <li><span class="nav-item-separator"></span></li>
+            </ul>
+
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            
+        </nav>
+
+        <div class="page-top"></div>
+    </header>
+
+    <script src="hamburger.js"></script>
+    <script src="scroll-nav.js"></script>
+
+    <section class="hero-image-top">
+        <div class="hero-cover">
+            <picture>
+                <source srcset="./img/home_header.jpeg" media="(min-width: 820px)" class="header-image">
+                <img src="./img/home_header_mobile.jpeg" alt="Some picture" class="header-image">
+                <!-- <img class="header-image" src="./img/home_header.jpeg" alt="Home Header Image"/>  -->
+            </picture> 
 
             <div class="header-text">
                 <div class="page-title">DANGER CLIFFS</div>
@@ -30,49 +70,8 @@
 
                 <div class="page-subtitle">Live the Life | Mt. Hood, Oregon</div>
             </div>
-
-            <nav class="nav-regular">
-                <a class="logo-image" href="index" >
-                    <img class="logo-image" src="./img/Danger Cliffs - SKIIER - FINAL.png" height="100%" alt="Danger CLiffs Logo"/>
-                </a>
-
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="index">HOME</a></li>
-                    <li><span class="nav-item-separator"></span></li>
-                    <li class="nav-item"><a href="about">ABOUT</a></li>
-                    <li><span class="nav-item-separator"></span></li>
-                    <li class="nav-item"><a href="share">SHARE</a></li>
-                    <li><span class="nav-item-separator"></span></li>
-                    <li class="nav-item"><a href="contact">CONTACT</a></li>
-                    <li><span class="nav-item-separator"></span></li>
-                    <li class="nav-item"><a href="shop"><button>SHOP</button></a>
-                    <li><span class="nav-item-separator"></span></li>
-                </ul>
-
-
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-
-                
-            </nav>
-
-            <div class="page-top"></div>
-
-            <div class="header-logo">
-                <img src="./img/Danger Cliffs - SKIIER - FINAL.png" alt="Skier Logo"> 
-            </div>
-                
-            <img class="header-image" src="./img/home_header.jpeg" alt="Top Banner Image"/>  
-        
         </div>
-          
-    </header>
-
-    <script src="hamburger.js"></script>
-    <script src="scroll-nav.js"></script>
+    </section>
     
 
     <section class="banner">
@@ -115,90 +114,92 @@
 
         </div>
 
-        <div class="image-slider-border">
 
-            <div class="image-slider-top">
-                <div class="home-images">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <input type="radio" name="radio-btn" id="radio5">
-                    <input type="radio" name="radio-btn" id="radio6">
-                    <input type="radio" name="radio-btn" id="radio7">
-                    <input type="radio" name="radio-btn" id="radio8">
-                    <input type="radio" name="radio-btn" id="radio9">
-                    <input type="radio" name="radio-btn" id="radio10">
-                    <input type="radio" name="radio-btn" id="radio11">
-                    <input type="radio" name="radio-btn" id="radio12">
+        <div class="image-slider-section">
+            <div class="image-slider-border">
+                <div class="image-slider-top">
+                    <div class="home-images">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <input type="radio" name="radio-btn" id="radio5">
+                        <input type="radio" name="radio-btn" id="radio6">
+                        <input type="radio" name="radio-btn" id="radio7">
+                        <input type="radio" name="radio-btn" id="radio8">
+                        <input type="radio" name="radio-btn" id="radio9">
+                        <input type="radio" name="radio-btn" id="radio10">
+                        <input type="radio" name="radio-btn" id="radio11">
+                        <input type="radio" name="radio-btn" id="radio12">
 
-                    <div class="slide first">
-                        <img src="./img/home-images/home_img1.jpg" alt="Home Image 1">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/home-images/home_img2.jpg" alt="Home Image 2">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/home-images/home_img3.jpg" alt="Home Image 3">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/home-images/home_img4.jpg" alt="Home Image 4">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/home-images/home_img5.jpg" alt="Home Image 5">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/home-images/home_img6.jpg" alt="Home Image 6">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/home-images/home_img7.jpg" alt="Home Image 7">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/home-images/home_img8.jpg" alt="Home Image 8">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/home-images/home_img9.jpg" alt="Home Image 9">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/home-images/home_img10.jpg" alt="Home Image 10">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/home-images/home_img11.jpg" alt="Home Image 11">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/home-images/home_img12.jpg" alt="Home Image 12">
-                    </div>
-                
+                        <div class="slide first">
+                            <img src="./img/home-images/home_img1.jpg" alt="Home Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/home-images/home_img2.jpg" alt="Home Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/home-images/home_img3.jpg" alt="Home Image 3">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/home-images/home_img4.jpg" alt="Home Image 4">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/home-images/home_img5.jpg" alt="Home Image 5">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/home-images/home_img6.jpg" alt="Home Image 6">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/home-images/home_img7.jpg" alt="Home Image 7">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/home-images/home_img8.jpg" alt="Home Image 8">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/home-images/home_img9.jpg" alt="Home Image 9">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/home-images/home_img10.jpg" alt="Home Image 10">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/home-images/home_img11.jpg" alt="Home Image 11">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/home-images/home_img12.jpg" alt="Home Image 12">
+                        </div>
+                    
 
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                        <div class="auto-btn5"></div>
-                        <div class="auto-btn6"></div>
-                        <div class="auto-btn7"></div>
-                        <div class="auto-btn8"></div>
-                        <div class="auto-btn9"></div>
-                        <div class="auto-btn10"></div>
-                        <div class="auto-btn11"></div>
-                        <div class="auto-btn12"></div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                            <div class="auto-btn6"></div>
+                            <div class="auto-btn7"></div>
+                            <div class="auto-btn8"></div>
+                            <div class="auto-btn9"></div>
+                            <div class="auto-btn10"></div>
+                            <div class="auto-btn11"></div>
+                            <div class="auto-btn12"></div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                    <label for="radio5" class="manual-btn"></label>
-                    <label for="radio6" class="manual-btn"></label>
-                    <label for="radio7" class="manual-btn"></label>
-                    <label for="radio8" class="manual-btn"></label>
-                    <label for="radio9" class="manual-btn"></label>
-                    <label for="radio10" class="manual-btn"></label>
-                    <label for="radio11" class="manual-btn"></label>
-                    <label for="radio12" class="manual-btn"></label>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                        <label for="radio6" class="manual-btn"></label>
+                        <label for="radio7" class="manual-btn"></label>
+                        <label for="radio8" class="manual-btn"></label>
+                        <label for="radio9" class="manual-btn"></label>
+                        <label for="radio10" class="manual-btn"></label>
+                        <label for="radio11" class="manual-btn"></label>
+                        <label for="radio12" class="manual-btn"></label>
+                    </div>
                 </div>
             </div>
         </div>
