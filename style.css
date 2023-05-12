@@ -15,6 +15,7 @@ body{
 /* -- Header Navigation -- */
 header{
     position: absolute;
+    z-index:999;
     justify-content: center;
     align-items: center;
 }
@@ -166,7 +167,6 @@ header{
 .hero-home-top{
     display: flex;
     align-items: center;    
-    position: relative;
     height:100vh;
     width:100%;
 }
@@ -181,10 +181,12 @@ header{
 
 .hero-cover{
     position: absolute;
-    z-index: 2;
+    z-index: 998;
     height:100%;
     width:100%;
-    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0));
+    overflow: hidden;
+    background-color: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
+    align-items: center;
 }
 
 .header-image{
@@ -192,6 +194,8 @@ header{
     height:100%;
     object-fit: cover;
     animation: 2s ease-out 0s 1 zoomout;
+    position: absolute;
+    z-index: 2;
 }
 
 .subpage-header-cover{
@@ -202,28 +206,40 @@ header{
 
 /* -- Header Text -- */
 
-.header-text{
-    overflow: hidden;
-    top: 25em;
-    text-align: left;
-    margin: auto 6em;
+.header-text-cover{
+    height:100%;
     width: fit-content;
     position: absolute;
-    z-index: 2;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.header-text{
+    overflow: hidden;
+    width: fit-content;
+    margin: auto 4em;
+}
+
+.header-text-subpage-cover{
+    height:100%;
+    width:100%;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    align-items: center;
 }
 
 .header-text-subpage{
     overflow: hidden;
-    top: 17vmin;
     text-align: center;
     margin: auto;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
+    width: fit-content;
 }
 
 .header-text > *{
     padding: 1vh;
+    white-space: nowrap;
 }
 
 .header-text svg{
@@ -236,8 +252,10 @@ header{
 }
 
 .page-title{
+    position: relative;
+    margin: auto -0.06em;
     font-size: 7em;
-    font-weight: 800;
+    font-weight: 1000;
     color: white;
     text-shadow: 1px 0 0 #000, 0 -1px 0 
     #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -245,6 +263,7 @@ header{
 }
 
 .page-subtitle{
+    position: relative;
     font-family: 'Inter', sans-serif;
     margin: 2vh auto;
     font-weight: 600;
@@ -831,6 +850,8 @@ footer > *{
 
 .contact-form{
     background-color: rgba(62, 93, 170, 0.2);
+    background:linear-gradient(rgb(102, 14, 14,0.5),rgba(102, 14, 14, 0.1));
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -1075,15 +1096,11 @@ footer > *{
 
 
     /* --------- HOME PAGE ---------- -*/
-    .header-image{
-        height: 100vh;
-    }
+    
     .header-text{
         margin:auto;
     }
-    .header-text-subpage{
-        top: 20vmin;
-    }
+    
     .header-logo img{
         height:65vmin;
     }
@@ -1094,8 +1111,15 @@ footer > *{
         font-size:3.2vw;
     }
     .header-text{
-        margin-top:7vh auto 0;
+        margin:0;
         z-index: 1;
+    }
+    .header-text svg{
+        width:55vw;
+    }
+    
+    .header-text-subpage svg{
+        width:55vw;
     }
     .logo-image{
         height:100%;
@@ -1191,17 +1215,12 @@ footer > *{
 
 
     /* ------ ABOUT PAGE ------ -*/
+    .hero-subpage-top{
+        height:45vh;
+    }
+
     .about-paragraph{
         width:85%;
-    }
-
-    .subpage-header-cover{
-        height: 50vh;
-    }
-
-    .header-image-subpage{
-        object-position: right;
-        right:0;
     }
 
     .about-section{
@@ -1267,7 +1286,7 @@ footer > *{
 
 
     /* ----- CONTACT PAGE ----- -*/
-    .contact-conten{
+    .contact-content{
         margin: 2vh 0;
     }
 
