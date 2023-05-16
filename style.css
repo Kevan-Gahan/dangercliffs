@@ -426,7 +426,7 @@ header{
 
 :root{
     /* NEED A 4/3 AR for height and width here*/
-    /* Because images are 4032x3024 */
+    /* Because images are 2500 X 1875 */
     --image-slider-width: 50vw;
     --image-slider-height: 37.5vw;
     --image-slider-move: -50vw; /*same as -width*/
