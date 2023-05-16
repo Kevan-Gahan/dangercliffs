@@ -1101,7 +1101,9 @@ footer > *{
     .hero-cover{
         width: 100%;
     }
-    
+    .header-image{
+        height:100vh;
+    }
     .page-title{
         margin: auto;
         font-size: 10vw;
