@@ -1097,13 +1097,13 @@ footer > *{
 
     .hero-home-top{
         width: 100%;
-        height:100vh;
+        height:80vh;
     }
     .hero-cover{
         width: 100%;
     }
     .hero-cover-home{
-        height:100vh;
+        height:80vh;
     }
     .page-title{
         margin: auto;
