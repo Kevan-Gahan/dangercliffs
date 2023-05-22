@@ -1135,6 +1135,10 @@ footer > *{
     .logo-image{
         height:100%;
     }
+    .banner{
+        height:fit-content;
+        padding:0.3em;
+    }
     .banner-text{
         font-size: 4.5vw;
     }
