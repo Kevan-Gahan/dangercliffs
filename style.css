@@ -366,11 +366,10 @@ header{
     display: flex;
     flex-direction: column;
     height: fit-content;
-    margin: 0 0 5vh 0;
 }
 
 .what-we-do-head{
-    margin: 5vh auto;
+    margin: auto;
     text-align: center;
     text-decoration: underline;
     
@@ -433,6 +432,7 @@ header{
 }
 
 .image-slider-section{
+    margin: 0 auto 2em;
     width:100%;
     height:fit-content;
     display: flex;
