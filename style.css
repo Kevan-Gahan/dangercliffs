@@ -37,7 +37,7 @@ header{
 .nav-scrolled{
     z-index: 3;
     height:5em;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
     
 }
 
@@ -153,8 +153,8 @@ header{
 
 .bar{
     display: block;
-    width: 25px;
-    height: 1.5px;
+    width: 30px;
+    height: 2px;
     margin: 7px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -416,8 +416,8 @@ header{
     margin: auto 2vh;
     width: 65vw;
     text-align: left;
-    font-weight: 700;
-    font-size: larger;
+    font-weight: 550;
+    font-size: large;
     font-family: 'Inter', sans-serif;
 }
 
@@ -438,7 +438,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3em 0;
+    padding: 5em 0;
     background-color: rgba(62, 95, 119, 0.905);
 }
 
@@ -1030,10 +1030,10 @@ footer > *{
         opacity: 0;    
     }
     .hamburger.active .bar:nth-child(1){ 
-        transform: translateY(8.5px) rotate(45deg);
+        transform: translateY(9px) rotate(45deg);
     }
     .hamburger.active .bar:nth-child(3){ 
-        transform: translateY(-8.5px) rotate(-45deg);
+        transform: translateY(-9px) rotate(-45deg);
     }
     .nav-menu{
         display: flex;
