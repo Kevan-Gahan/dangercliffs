@@ -185,7 +185,6 @@ header{
     height:100%;
     width:100%;
     overflow: hidden;
-    background-color: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
     align-items: center;
 }
 
@@ -360,41 +359,105 @@ header{
     }
 }
 
-.what-we-do{
+.logos-section-cover{
+    position: relative;
+    margin:0 auto 2em;
+}
+
+.logos-section{
+    position: absolute;
+    top:0;
+    margin: 0 auto 3em;
     align-items: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     height: fit-content;
+    justify-content: center;
 }
 
-.what-we-do-head{
-    margin: auto;
-    text-align: center;
-    text-decoration: underline;
-    
-}
-
-.sports-logos{
+.logos-bg-img-cover{
+    overflow: hidden;
     display: flex;
-    height: 20vmin;
+}
+
+.background-img-overlay{
+    position: absolute;
+    left:0;
+    top:0;
     width:100%;
-    justify-content: space-evenly;
+    height:100%;
+    background: rgb(0,0,0,0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.background-img-fade{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:10%;
+    background: linear-gradient(rgba(200,196,195,0),rgba(200,196,195,1));
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.sports-logos > * {
+
+.logos-bg-img{  
+    width:100%;
     height:100%;
+    object-fit: cover;
+}
+
+.what-we-do-header{
+    margin: 0 auto 2em;
     text-align: center;
+    color:white;
+    font-size: larger;
 }
 
-.sports-logos img{
+.symbol-row{
+    height:fit-content;
+    display: flex;
+}
+
+.home-symbol-link{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    margin: auto 2vw 2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-symbol-link:hover{
+    color: red;
+    outline:1px solid black;
+    border-radius: 30px;
+    box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.75);
+}
+
+.home-logo{
+    margin:0 auto;
+    width:15em;
+    height:15em;
+}
+.home-symbol-link h2{
+    margin:0 auto;
+}
+
+.home-logo-img{
     height:100%;
-    margin-bottom: 0;
+    width:100%;
 }
 
 .what-we-do-foot{
-    margin: 9vh 0;
     text-align: center;
+    color: white;
 }
 
 .main-defn{
@@ -432,7 +495,7 @@ header{
 }
 
 .image-slider-section{
-    margin: 0 auto 2em;
+    margin: 0 auto;
     width:100%;
     height:fit-content;
     display: flex;
