@@ -162,7 +162,7 @@ header{
 }
 
 
-/* -- Header Image -- */
+/* -- Hero Header Image -- */
 
 .hero-home-top{
     display: flex;
@@ -186,6 +186,18 @@ header{
     width:100%;
     overflow: hidden;
     align-items: center;
+}
+
+.home-hero-overlay{
+    position: absolute;
+    z-index: inherit;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(125deg,rgba(0, 0, 0, 0.5),rgba(40, 107, 140, 0.1));
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-image{
@@ -288,7 +300,7 @@ header{
     align-items: center;
     justify-content: center;
     font-family: 'Inter', sans-serif;
-    margin: 0 0 5vh 0;
+    margin: 0;
     height: 10vh;	
     background: rgb(137, 140, 141);
     background: #000;
@@ -360,8 +372,11 @@ header{
 }
 
 .logos-section-cover{
+    height:51em;
     position: relative;
     margin:0 auto 2em;
+    align-items: center;
+    outline:2px solid red;
 }
 
 .logos-section{
@@ -372,13 +387,22 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: fit-content;
     justify-content: center;
+    outline:2px solid blue;
 }
 
 .logos-bg-img-cover{
     overflow: hidden;
     display: flex;
+    height:100%;
+    min-height: fit-content;
+    outline: 2px solid green;
+}
+
+.logos-bg-img{  
+    width:100%;
+    height:100%;
+    object-fit: cover;
 }
 
 .background-img-overlay{
@@ -391,7 +415,17 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.background-img-fade{
+.background-img-fadein{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:10%;
+    background: linear-gradient(rgba(200,196,195,1),rgba(200,196,195,0));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.background-img-fadeout{
     position: absolute;
     left:0;
     bottom:0;
@@ -402,13 +436,6 @@ header{
     background-repeat: no-repeat;
 }
 
-
-.logos-bg-img{  
-    width:100%;
-    height:100%;
-    object-fit: cover;
-}
-
 .what-we-do-header{
     margin: 0 auto 2em;
     text-align: center;
@@ -416,9 +443,13 @@ header{
     font-size: larger;
 }
 
-.symbol-row{
+.symbols-container{
     height:fit-content;
     display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 80em;
 }
 
 .home-symbol-link{
@@ -501,8 +532,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5em 0;
-    background-color: rgba(62, 95, 119, 0.905);
+    padding: 6em 0;
+    background: linear-gradient(45deg,rgba(62, 95, 119, 0.905),rgb(203, 117, 96));
 }
 
 .image-slider-border{
@@ -512,7 +543,8 @@ header{
     width:var(--image-slider-width); 
     height:var(--image-slider-height);
     position: relative;
-    
+    max-width: 1000px;
+    max-height: 750px;
 }
 
 .image-slider-top{
@@ -1067,10 +1099,13 @@ footer > *{
 
 /* --------------------------- FOR MOBILE VIEW ------------------------------ */
 
-
+@media(max-width:1150px){
+    .logos-section-cover{
+        height:70em;
+    }
+}
 
 @media(max-width:820px){
-
     /* -- NAVBAR CHANGE WITH SCROLL -- */
     .nav-regular{
         height:4.5em;
@@ -1212,17 +1247,15 @@ footer > *{
     .what-we-do{
         height: fit-content;
     }
-    .sports-logos{
-        flex-direction: column;
-        height: fit-content;
-    }
     .sub-logo img{
         height: 50vw;
     }
     .main-defn p{
         width:90%;
         margin: 0 1vh 0;
-
+    }
+    .logos-section-cover{
+        height:230vw;
     }
 
     /* --- HOME PAGE IMAGE SLIDER --- -*/
@@ -1272,6 +1305,18 @@ footer > *{
 
     .follow-us svg, .contact-us svg, .shop-us svg{
         margin: 0 2vw 0 0;
+    }
+
+    /* ---- HOME LOGOS SECTION ----*/
+    .what-we-do-header{
+        font-size: small;
+    }
+    .home-logo{
+        width:35vw;
+        height:35vw;
+    }
+    .what-we-do-foot{
+        font-size: small;
     }
 
 
