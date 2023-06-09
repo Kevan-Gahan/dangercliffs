@@ -788,6 +788,7 @@ footer > *{
 /* ---------------------------- ABOUT PAGE ---------------------------------- */
 
 .about-content{
+    width:100%;
     margin:7vh auto 0;
     font-family: 'Inter', sans-serif;
     text-align: center;
@@ -801,6 +802,7 @@ footer > *{
     display: flex; 
     align-items: center; 
     margin: 5vh auto;
+    width:100%;
     max-width:80em;
 }
 
