@@ -501,11 +501,13 @@ header{
 .separator{
     display: block;
     margin: 8vh auto;
+    max-width: 80em;
 }
 
 .main-defn p{
     margin: auto 2vh;
     width: 65vw;
+    max-width: 80em;
     text-align: left;
     font-weight: 550;
     font-size: large;
