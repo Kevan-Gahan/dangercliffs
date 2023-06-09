@@ -800,7 +800,7 @@ footer > *{
 .about-section{
     display: flex; 
     align-items: center; 
-    margin: 5vh 5vw;
+    margin: 5vh auto;
     max-width:80em;
 }
 
