@@ -501,13 +501,13 @@ header{
 .separator{
     display: block;
     margin: 8vh auto;
-    max-width: 80em;
+    max-width: 70em;
 }
 
 .main-defn p{
     margin: auto 2vh;
     width: 65vw;
-    max-width: 80em;
+    max-width: 65em;
     text-align: left;
     font-weight: 550;
     font-size: large;
@@ -542,8 +542,6 @@ header{
     width:var(--image-slider-width); 
     height:var(--image-slider-height);
     position: relative;
-    max-width: 1000px;
-    max-height: 750px;
 }
 
 .image-slider-top{
@@ -1097,6 +1095,14 @@ footer > *{
 
 
 /* --------------------------- FOR MOBILE VIEW ------------------------------ */
+
+@media(min-width:2000px){
+    :root{
+        --image-slider-width: 1000px;
+        --image-slider-height: 750px;
+        --image-slider-move: -1000px; /*same as -width*/
+    }
+}
 
 @media(max-width:820px){
     /* -- NAVBAR CHANGE WITH SCROLL -- */
