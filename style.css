@@ -372,23 +372,10 @@ header{
 }
 
 .logos-section-cover{
-    height:51em;
+    height:60em;
     position: relative;
     margin:0 auto 2em;
     align-items: center;
-    outline:2px solid red;
-}
-
-.logos-section{
-    position: absolute;
-    top:0;
-    margin: 0 auto 3em;
-    align-items: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    outline:2px solid blue;
 }
 
 .logos-bg-img-cover{
@@ -396,7 +383,17 @@ header{
     display: flex;
     height:100%;
     min-height: fit-content;
-    outline: 2px solid green;
+}
+
+.logos-section{
+    position: absolute;
+    top:0;
+    bottom:0;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logos-bg-img{  
@@ -459,7 +456,7 @@ header{
     text-decoration: none;
     align-items: center;
     color: white;
-    margin: auto 2vw 2em;
+    margin: auto 2.1em 2em;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1099,12 +1096,6 @@ footer > *{
 
 /* --------------------------- FOR MOBILE VIEW ------------------------------ */
 
-@media(max-width:1150px){
-    .logos-section-cover{
-        height:70em;
-    }
-}
-
 @media(max-width:820px){
     /* -- NAVBAR CHANGE WITH SCROLL -- */
     .nav-regular{
@@ -1254,8 +1245,8 @@ footer > *{
         width:90%;
         margin: 0 1vh 0;
     }
-    .logos-section-cover{
-        height:230vw;
+    .home-symbol-link{
+        margin: auto 2vw 2em;
     }
 
     /* --- HOME PAGE IMAGE SLIDER --- -*/
