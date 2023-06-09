@@ -794,14 +794,14 @@ footer > *{
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .about-section{
     display: flex; 
     align-items: center; 
     margin: 5vh 5vw;
-    border:2px solid green;
-    max-width:100em;
+    max-width:80em;
 }
 
 .about-text-section{
@@ -809,12 +809,10 @@ footer > *{
     text-align: center;
     display: flex;
     flex-direction: column;
-    outline:2px solid red;
 }
 
 .about-image-section{
     width:60%;
-    outline: 2px solid blue;
 }
 
 .about-header{
