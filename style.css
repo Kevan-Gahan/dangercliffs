@@ -889,18 +889,20 @@ footer > *{
 
 .about-bottom-section{
     width: 100vw;
+    height:52vh;
     border: 3px solid black;
     margin: 5vh 0 0 0;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: column;  
 }
 
 .about-bottom-section img{
     width: 100%;
-    margin: 0;
+    height:100%;
+    object-fit: cover;
 }
 .about-bottom-section h1{
     text-align: center;
