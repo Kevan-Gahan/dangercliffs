@@ -195,7 +195,7 @@ header{
     top:0;
     width:100%;
     height:100%;
-    background: linear-gradient(125deg,rgba(0, 0, 0, 0.5),rgba(40, 107, 140, 0.1));
+    background: linear-gradient(125deg,rgba(0, 0, 0, 0.4),rgba(40, 107, 140, 0.2));
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -372,17 +372,16 @@ header{
 }
 
 .logos-section-cover{
-    height:60em;
     position: relative;
     margin:0 auto 2em;
     align-items: center;
+    justify-content: center;
 }
 
 .logos-bg-img-cover{
     overflow: hidden;
     display: flex;
     height:100%;
-    min-height: fit-content;
 }
 
 .logos-section{
@@ -394,9 +393,12 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: fit-content;
+    border:2px solid green;
 }
 
 .logos-bg-img{  
+    position: relative;
     width:100%;
     height:100%;
     object-fit: cover;
@@ -531,8 +533,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6em 0;
-    background: linear-gradient(45deg,rgba(62, 95, 119, 0.905),rgb(203, 117, 96));
+    padding: 1em 0;
+    background: linear-gradient(125deg,rgba(0, 0, 0, 0.85),rgba(176, 0, 0, 0.9))
 }
 
 .image-slider-border{
@@ -582,7 +584,6 @@ header{
     margin: calc(var(--image-slider-height) * -0.04) 0;
     display: flex;
     justify-content: center;
-
 }
 
 .manual-btn{
@@ -788,10 +789,9 @@ footer > *{
 /* ---------------------------- ABOUT PAGE ---------------------------------- */
 
 .about-content{
-    width:100%;
+    width:100vw;
     margin:7vh auto 0;
     font-family: 'Inter', sans-serif;
-    text-align: center;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -799,11 +799,12 @@ footer > *{
 }
 
 .about-section{
+    position: relative;
     display: flex; 
     align-items: center; 
-    margin: 5vh auto;
-    width:100%;
+    width:90vw;
     max-width:80em;
+    margin:2em auto;
 }
 
 .about-text-section{
@@ -1352,7 +1353,7 @@ footer > *{
 
     .about-section{
         flex-direction: column;
-        margin: 1vh 0;
+        margin: auto;
     }
 
     .about-section:nth-of-type(2){
@@ -1361,6 +1362,7 @@ footer > *{
 
     .about-image-section{
         width:100vw;
+        display: flex;
         justify-content: center;
     }
 
@@ -1376,6 +1378,7 @@ footer > *{
 
     .about-text-section{
         width:100vw;
+        display: flex;
         align-items: center;
     }
 
@@ -1402,9 +1405,7 @@ footer > *{
         border:1px solid black;
     }
 
-    .about-bottom-section img{
-        width: 150%;
-    }
+    
 
     .about-bottom-section h1{
         font-size:medium;
