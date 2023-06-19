@@ -1,5 +1,6 @@
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -195,7 +196,7 @@ header{
     top:0;
     width:100%;
     height:100%;
-    background: linear-gradient(125deg,rgba(0, 0, 0, 0.4),rgba(40, 107, 140, 0.2));
+    background: linear-gradient(125deg,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0));
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -284,6 +285,35 @@ header{
     #000, 0 1px 0 #000, -1px 0 0 #000;
     animation: 2s ease 0s 1 text-appear;
 }
+
+.scroll-arrow-container{
+    position: absolute;
+    z-index: 999;
+    width:3em;
+    top:90%;
+    left:0;
+    right:0;
+    margin:auto;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.arrow-leftside{
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 55;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.scroll-arrow path{
+    fill: white;
+}
+
+.scroll-arrow-container:hover{
+    transform: translateY(25%);
+}
+
 
 /* --------------------------- END HEADER SECTION --------------------------- */
 
@@ -376,29 +406,28 @@ header{
     margin:0 auto 2em;
     align-items: center;
     justify-content: center;
+    display: table;
+    border:2px solid red;
 }
 
 .logos-bg-img-cover{
     overflow: hidden;
-    display: flex;
-    height:100%;
+    display: table-row;
 }
-
 .logos-section{
     position: absolute;
-    top:0;
     bottom:0;
+    top:0;
+    overflow:auto;
     align-items: center;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: table-row;
     justify-content: center;
     height: fit-content;
     border:2px solid green;
 }
 
 .logos-bg-img{  
-    position: relative;
     width:100%;
     height:100%;
     object-fit: cover;
@@ -1194,6 +1223,10 @@ footer > *{
 
     .nav-menu.active{
         left:0;
+    }
+
+    .scroll-arrow-container{
+        display: none;
     }
 
     /* --------- HOME PAGE ---------- -*/
