@@ -423,6 +423,7 @@ header{
     width:100vw;
     background-image: url(./img/logos-background.jpeg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
